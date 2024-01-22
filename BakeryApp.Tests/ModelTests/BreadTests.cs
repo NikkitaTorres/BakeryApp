@@ -28,5 +28,13 @@ namespace BakeryApp.Tests
       bread.Quantity = 3;
       Assert.AreEqual(10, bread.CalculateTotalCost());
     }
+
+    [TestMethod]
+    public void GetBreadDeal_RunBreadCalculation_Equals20()
+    {
+      Bread bread = new Bread();
+      bread.Quantity = 6;
+      Assert.AreEqual(20, bread.CalculateTotalCost());
+    }
   }
 }
