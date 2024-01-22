@@ -13,5 +13,12 @@ namespace BakeryApp.Tests
       Bread bread = new Bread();
       Assert.IsNotNull(bread);
     }
+
+    [TestMethod]
+    public void GetBreadQuantity_CheckDefaultQuantity_0()
+    {
+      Bread bread = new Bread();
+      Assert.AreEqual(0, bread.Quantity);
+    }
   }
 }
