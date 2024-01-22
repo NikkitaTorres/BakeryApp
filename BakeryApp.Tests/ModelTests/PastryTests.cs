@@ -14,10 +14,11 @@ namespace BakeryApp.Tests
     }
 
     [TestMethod]
-    public void GetPastryQuantity_CheckDefaultQuantity_0()
+    public void GetPastryCost_RunPastryCalculation_Equals10()
     {
       Pastry pastry = new Pastry();
-      Assert.AreEqual(0, pastry.Quantity);
+      pastry.Quantity = 4;
+      Assert.AreEqual(6, pastry.CalculateTotalCost());
     }
   }
 }
