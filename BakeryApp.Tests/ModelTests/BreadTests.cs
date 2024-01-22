@@ -11,7 +11,7 @@ namespace BakeryApp.Tests
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
       Bread bread = new Bread();
-      Assert.NotNull(bread);
+      Assert.IsNotNull(bread);
     }
   }
 }
