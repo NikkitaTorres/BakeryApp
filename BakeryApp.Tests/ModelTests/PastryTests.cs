@@ -27,5 +27,13 @@ namespace BakeryApp.Tests
       pastry.Quantity = 4;
       Assert.AreEqual(6, pastry.CalculateTotalCost());
     }
+
+    [TestMethod]
+    public void GetPastryDeal_RunPastryCalculation_Equals12()
+    {
+      Pastry pastry = new Pastry();
+      pastry.Quantity = 8;
+      Assert.AreEqual(12, pastry.CalculateTotalCost());
+    }
   }
 }
