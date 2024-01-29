@@ -27,7 +27,7 @@ namespace BakeryApp.Tests
     {
       Pastry pastry = new Pastry();
       pastry.Quantity = 4;
-      Assert.AreEqual(6, pastry.CalculateTotalCost());
+      Assert.AreEqual(6, pastry.CalculatePastryCost());
     }
 
     [TestMethod]
@@ -35,7 +35,7 @@ namespace BakeryApp.Tests
     {
       Pastry pastry = new Pastry();
       pastry.Quantity = 8;
-      Assert.AreEqual(12, pastry.CalculateTotalCost());
+      Assert.AreEqual(12, pastry.CalculatePastryCost());
     }
 
     [TestMethod]
@@ -50,15 +50,12 @@ namespace BakeryApp.Tests
 
             pastry.Quantity = 4;
 
-            int totalCost = pastry.CalculateTotalCost();
+            int totalCost = pastry.CalculatePastryCost();
 
-            // Print the total cost to the console 
             Console.WriteLine($"Total Cost: {totalCost}");
 
-            // Get the console output
             string output = stringWriter.ToString().Trim();
 
-            // Assert the expected output
             Assert.AreEqual("Total Cost: 6", output);
     }
   }

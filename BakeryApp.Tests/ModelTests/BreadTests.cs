@@ -28,7 +28,7 @@ namespace BakeryApp.Tests
     {
       Bread bread = new Bread();
       bread.Quantity = 3;
-      Assert.AreEqual(10, bread.CalculateTotalCost());
+      Assert.AreEqual(10, bread.CalculateBreadCost());
     }
 
     [TestMethod]
@@ -36,7 +36,7 @@ namespace BakeryApp.Tests
     {
       Bread bread = new Bread();
       bread.Quantity = 6;
-      Assert.AreEqual(20, bread.CalculateTotalCost());
+      Assert.AreEqual(20, bread.CalculateBreadCost());
     }
 
     [TestMethod]
@@ -51,15 +51,12 @@ namespace BakeryApp.Tests
 
             bread.Quantity = 3;
 
-            int totalCost = bread.CalculateTotalCost();
+            int totalCost = bread.CalculateBreadCost();
 
-            // Print the total cost to the console 
             Console.WriteLine($"Total Cost: {totalCost}");
 
-            // Get the console output
             string output = stringWriter.ToString().Trim();
 
-            // Assert the expected output
             Assert.AreEqual("Total Cost: 10", output);
     }
   }
