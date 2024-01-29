@@ -15,8 +15,8 @@ An application created to help Pierre's Bakery calculate the price for an order 
 
 1. Clone [this](https://github.com/NikkitaTorres/BakeryApp.git) repository to your desktop.
 2. From the root of the project folder, run "dotnet build" in the terminal to compile the code.
-3. Use "dotnet restore" in the BakeryApp.Tests directory to install necessary packages.
-3. Use "dotnet run" in the root directory to run the project.
+3. Use "dotnet restore" in both the BakeryApp and BakeryApp.Tests directory to install necessary packages.
+3. Use "dotnet run" in the BakeryApp directory to run the project.
 4. Additionaly, you can use "dotnet test" after navigating to the BakeryApp.Tests directory to run all available tests.
 
 ## License
