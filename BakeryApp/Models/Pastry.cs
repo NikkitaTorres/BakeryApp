@@ -4,7 +4,7 @@ namespace BakeryApp.Models
   {
     public int Quantity { get; set; }
 
-    public int CalculateTotalCost()
+    public int CalculatePastryCost()
     {
       int paidLoaves = Quantity - Quantity / 3;
       
